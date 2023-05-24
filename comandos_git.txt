@@ -15,17 +15,27 @@ git config --global --unset user.password
 git config --global user.password "isendMYGITHUB.23"
 
 
-// iniciar git 'control de versión'
+
+
+// cargar proyecto a github
+// iniciar git 'control de versión' solo se realiza una vez
 git init
 
 // cargar todos los archivos para push
 git add .
 
-// generar comentario del push del proyecto a subit
+// generar comentario del push del proyecto a subir
 git commit -m 'Inicio de proyecto Web App Top Doctors'
 
-git remote add origin https://el_token_personal@github.com/sergiowebuild2/adso55.git
+git remote add origin https://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@github.com/sergiowebuild2/adsosergioflorez.git
+
+git remote set-url origin https://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@github.com/sergiowebuild2/adsosergioflorez.git
 
 git push -u origin master
+
+// clonar proyecto publico
+
+git clone https://github.com/sergiowebuild2/adsosergioflorez.git
+
 
 
