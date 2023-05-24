@@ -1,0 +1,31 @@
+// configuraciones globales de git
+
+git config --global -- list
+
+// modificación de credenciales
+
+git config --global user.name "sergiowebuild2"
+git config --global user.password "isendMYGITHUB.23"
+git config --global user.email "ingeniografico.contacto@gmail.com"
+
+// eliminar contraseña actual
+git config --global --unset user.password
+
+// añadir contraseña nueva
+git config --global user.password "isendMYGITHUB.23"
+
+
+// iniciar git 'control de versión'
+git init
+
+// cargar todos los archivos para push
+git add .
+
+// generar comentario del push del proyecto a subit
+git commit -m 'Inicio de proyecto Web App Top Doctors'
+
+git remote add origin https://el_token_personal@github.com/sergiowebuild2/adso55.git
+
+git push -u origin master
+
+
